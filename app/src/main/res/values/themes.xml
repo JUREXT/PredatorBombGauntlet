@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.PredatorBombGauntlet" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.PredatorBombGauntlet" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black_opacity_32</item>
+        <item name="android:navigationBarColor">@color/black_opacity_32</item>
+    </style>
+
+    <style name="Theme.SplashScreenTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/predator_logo</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.PredatorBombGauntlet</item>
+    </style>
 </resources>
